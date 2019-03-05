@@ -1,0 +1,12 @@
+/* ****** Retreive form input ************/
+
+
+function storeVal(){
+  var key = document.getElementById('key').value
+  var value = document.getElementById('value').value
+  // populate element with storage
+  localStorage.setItem(key, value);
+  var para = document.getElementById('script').innerHTML = localStorage.getItem(key)  
+}
+
+
